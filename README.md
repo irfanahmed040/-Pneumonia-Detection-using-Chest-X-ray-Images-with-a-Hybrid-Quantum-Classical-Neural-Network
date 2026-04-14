@@ -19,6 +19,7 @@ It also includes:
 - A FastAPI backend for inference  
 - A browser-based frontend for image upload and prediction  
 
+The dataset used for training the model in this project is taken from : https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia
 ---
 
 ## Problem Statement
