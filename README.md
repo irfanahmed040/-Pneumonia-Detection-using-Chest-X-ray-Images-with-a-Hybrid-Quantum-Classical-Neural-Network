@@ -36,7 +36,8 @@ Chest X-Ray Pneumonia Dataset (Kaggle)
 
 ### 1) Prediction with X-ray image of person with pneumonia
 
-<img width="1440" height="861" alt="image" src="https://github.com/user-attachments/assets/df98fdb0-6cca-47f0-811a-d9274bff4a8c" />
+<img width="1440" height="861" alt="image" src="https://github.com/user-attachments/assets/48dea3a7-145d-429d-a7a2-a565368adc8f" />
+
 
 ### 2) Prediction with X-ray image of a normal healthy person
 
