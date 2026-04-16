@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adaptive Hybrid Quantum-Classical CNN | Pneumonia Detection</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="bg-grid"></div>
+    <div class="bg-orb orb-a"></div>
+    <div class="bg-orb orb-b"></div>
+    <main class="shell">
+      <section class="hero panel reveal">
+        <h1>Adaptive Hybrid Quantum-Classical CNN</h1>
+        <p class="subtitle">Pneumonia detection from chest X-ray images using a MobileNet backbone fused with a variational quantum layer and adaptive fusion gate.</p>
+        <div class="chips">
+          <span>Quantum Simulator</span>
+          <span>FastAPI + Web UI</span>
+        </div>
+      </section>
+
+      <section class="panel reveal">
+        <article>
+          <h2>About this system</h2>
+          <p>
+            The model extracts visual features using a lightweight CNN, projects them to a compact latent space,
+            and processes those features in both classical and quantum branches. An adaptive gate learns how much
+            each branch should influence the final decision.
+          </p>
+          <ul>
+            <li>Dataset: Kermany chest_xray (NORMAL vs PNEUMONIA)</li>
+            <li>Target: Binary classification</li>
+            <li>Backend API: FastAPI with realtime prediction endpoint</li>
+            <li>Frontend: upload preview, prediction breakdown, confidence report</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="panel reveal">
+        <h2>Project Summary</h2>
+        <p>
+          A Major-Project on Pneumonia Detection using Chest X-ray Images with a Hybrid Quantum-Classical Neural Network.
+          Submitted in partial fulfilment for the Degree of B.Tech. in Artificial Intelligence.
+        </p>
+        <div class="summary-grid">
+          <div>
+            <h2 style="text-align: center;">Done By</h2>
+            <div class="contributors">
+                <article class="contributor-card">
+                  <h4>Students Of AI Department: </h4>
+                
+                <article class="contributor-card">
+                  <h4>Dokku Manohar</h4>
+                  <p>(22911A3578)</p>
+                </article>
+                <article class="contributor-card">
+                  <h4>Irfan Mohammed Ahmed</h4>
+                  <p>(22911A3587)</p>
+                </article>
+                <article class="contributor-card">
+                  <h4>Sufiya Shareef</h4>
+                  <p>(22911A35B6)</p>
+                </article>
+                <article class="contributor-card">
+                  <h4>M. Siddharth Reddy</h4>
+                  <p>(22911A35C6)</p>
+                </article>
+                <p class="year-pill">Academic Year 2025-2026</p>
+              </article>
+            </div>
+          </div>
+          <div>
+            <h3 class="block-title">Project Supervision</h3>
+            <article class="info-card supervision-card">
+              <p class="label">Project Guide</p>
+              <h4 class="highlight-name">Dr. Anusha Ampavathi</h4>
+               <p class="label">Associate Professor</p>
+              
+            </article>
+            <article class="info-card dept-card">
+              <p class="label">Department</p>
+              <h4 class="highlight-name">Artificial Intelligence</h4>
+            </article>
+          </div>
+          <div>
+            <h3 class="block-title">Institution</h3>
+            <article class="info-card institution-card">
+              <img src="/static/vjitlogo.png" alt="VJIT logo" class="institution-logo" />
+              <h4 class="highlight-name">Vidya Jyothi Institute of Technology</h4>
+              <p class="muted-line">An Autonomous Institution</p>
+              <div class="tag-row">
+                <span>Accredited by NAAC</span>
+                <span>Accredited by NBA</span>
+                <span>Approved by AICTE New Delhi</span>
+                <span>Permanently Affiliated to JNTUH</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel reveal">
+        <h2>How the pipeline works</h2>
+        <div class="timeline">
+          <div class="step">
+            <span>01</span>
+            <p>X-ray image is resized and normalized to match ImageNet preprocessing.</p>
+          </div>
+          <div class="step">
+            <span>02</span>
+            <p>MobileNetV3 extracts visual representations from lung regions.</p>
+          </div>
+          <div class="step">
+            <span>03</span>
+            <p>Reduced latent vector is encoded into a quantum circuit with rotational gates and entanglement.</p>
+          </div>
+          <div class="step">
+            <span>04</span>
+            <p>Adaptive gate fuses quantum and classical logits into final NORMAL/PNEUMONIA prediction.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel reveal">
+        <h2>Try a prediction</h2>
+        <form id="predict-form">
+          <label class="upload-box" for="image-input">
+            <input id="image-input" type="file" accept="image/*" required />
+            <span>Drop an X-ray image or click to browse</span>
+          </label>
+        </form>
+        <div class="preview-wrap">
+          <img id="preview" alt="Uploaded preview" hidden />
+        </div>
+        <div class="action-row">
+          <button id="submit-btn" type="submit" form="predict-form">Analyze Image</button>
+          <button id="clear-btn" type="button" class="ghost-btn" disabled>Remove Image</button>
+        </div>
+        <div id="result" class="result" hidden></div>
+        <p class="help-text">Tip: after viewing a result, click Remove Image and upload another scan.</p>
+      </section>
+    </main>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>
